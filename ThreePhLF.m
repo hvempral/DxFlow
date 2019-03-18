@@ -87,11 +87,19 @@ for iisrc = 1:length(src)
 % % k=[conver2rec(1.021,   -2.49 );conver2rec(1.042,   -1.72 ); conver2rec(1.017,  -2.17 )]
 k=[conver2rec(1.00,   0 );conver2rec(1.00,   0 ); conver2rec(1.00,  0 )]
 
-% 
+[isrc,~,~] = find(BusD(:,1) == src(1,iisrc));
+
+
 % % ******   IEEE 13 bus system; Voltage at Node 650  ************
- v(:,:,src(1,iisrc)) =   [conver2rec(2401.777,   0.000 );
-                       conver2rec(2401.777,  -120.00);
-                       conver2rec(2401.777, 120.00)];   
+ v(:,:,src(1,iisrc)) =   [conver2rec(BusD(isrc,4)*577.3503,   0.000 );
+                       conver2rec(BusD(isrc,4)*577.3503,  -120.00);
+                       conver2rec(BusD(isrc,4)*577.3503, 120.00)]; 
+
+
+% % % ******   IEEE 13 bus system; Voltage at Node 650  ************
+%  v(:,:,src(1,iisrc)) =   [conver2rec(2401.777,   0.000 );
+%                        conver2rec(2401.777,  -120.00);
+%                        conver2rec(2401.777, 120.00)];   
 
 
 
