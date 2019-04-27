@@ -3,6 +3,11 @@ Open-Source Poly-Phase Distribution load flow simulation tool
 
 ## Modules in DxFlow  ##
 
+
+![alt text](https://raw.githubusercontent.com/hvempral/DxFlow/OverviewDxFlow.pdf)
+OverviewDxFlow.pdf
+
+
 **A. Input File Generator**
 * **InputFileGeneratorR8.m**
 * A Preprocessor- Imports raw data consisting of distribution elements, load data and process to multidimensional array
