@@ -1,11 +1,9 @@
 # DxFlow
 Open-Source Poly-Phase Distribution load flow simulation tool
 
+
 ## Modules in DxFlow  ##
-
-
-![alt text](https://raw.githubusercontent.com/hvempral/DxFlow/OverviewDxFlow.pdf)
-OverviewDxFlow.pdf
+<img src="OverviewDxFlow.png" width ="800">
 
 
 **A. Input File Generator**
@@ -15,8 +13,7 @@ OverviewDxFlow.pdf
 * *Other functional modules*
     * *Spacingalg.m* 
     * *conver2rec.m*
-
-    
+   
 
 
 **B. Topology Builder**
